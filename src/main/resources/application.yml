@@ -1,0 +1,17 @@
+info:
+  component: DiscoveryService
+server:
+  port: ${port:8010}
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+  server:
+    enable-self-preservation: false
+    wait-time-in-ms-when-sync-empty: 0
+  instance:
+    hostname: localhost
+    lease-expiration-duration-in-seconds: 120
+    lease-renewal-interval-in-seconds: 120
+    secure-port-enabled: true
+
