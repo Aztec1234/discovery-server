@@ -34,6 +34,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         auth.inMemoryAuthentication()
                 .withUser("user").password("{noop}user@123").roles("USER") //noOpPasswordEncoder -> no pwd encoder
                 .and()
-                .withUser("aztec").password(passwordEncoder().encode("aztec@123")).roles("ADMIN");
+                .withUser("aztec").password(passwordEncoder().encode("aztec123")).roles("ADMIN");
     }
 }
